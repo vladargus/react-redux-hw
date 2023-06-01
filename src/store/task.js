@@ -13,7 +13,7 @@ const taskSlice = createSlice({
       state.isLoading = false
     },
     create(state, action) {
-      state.entities = [...state.entities, action.payload]
+      state.entities.push(action.payload)
       state.isLoading = false
     },
     update(state, action) {
